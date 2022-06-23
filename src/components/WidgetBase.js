@@ -121,6 +121,7 @@ const WidgetBase = (props: WidgetBaseProps) => {
             renderToHardwareTextureAndroid={true} 
             style={[{ height: webViewHeight > MAX_HEIGHT ? MAX_HEIGHT : webViewHeight }, style]}>
             <AutoHeightWebView
+                androidLayerType="software"
                 ref={webViewRef}
                 viewportContent={'width=device-width, user-scalable=no'}
                 source={{
